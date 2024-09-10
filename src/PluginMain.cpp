@@ -2,6 +2,7 @@
 
 #include "harbieCurve.h"
 #include "harbieLocator.h"
+#include "version.h"
 
 //---------------------------------------------------------------------------
 //---------------------------------------------------------------------------
@@ -11,7 +12,7 @@
 
 MStatus initializePlugin(MObject obj) {
     MStatus status;
-    MFnPlugin plugin(obj, PLUGIN_COMPANY, "3.0", "Any");
+    MFnPlugin plugin(obj, PLUGIN_COMPANY, VERSION_STRING, "Any");
     // now the curve building --------------------------
     status = plugin.registerNode("makeHarbieCurve", harbieCurve::id,
                                  harbieCurve::creator, harbieCurve::initialize);

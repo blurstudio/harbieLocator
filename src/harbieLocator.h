@@ -84,7 +84,7 @@ class harbieLocator : public MPxLocatorNode {
     virtual ~harbieLocator();
 
     virtual MStatus compute(const MPlug& plug, MDataBlock& data);
-    virtual void harbieLocator::postConstructor();
+    virtual void postConstructor();
     virtual void draw(M3dView& view, const MDagPath& path,
                       M3dView::DisplayStyle style,
                       M3dView::DisplayStatus status);
